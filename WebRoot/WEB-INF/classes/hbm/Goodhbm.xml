@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="com.sinitek.demo.domain.Good" table="good" lazy="false">
+    <id name="goodId" column="good_id">
+      <generator class="identity" />
+    </id>
+    <property name="barcode" column="barcode" />
+    <property name="goodName" column="good_name" />
+    <property name="goodLocation" column="good_location" />
+    <property name="goodType" column="good_type"></property>
+    <property name="goodImage" column="good_image"></property>
+    <property name="buyPrice" column="buy_price"></property>
+    <property name="salePrice" column="sale_price"></property>
+    <property name="goodCount" column="good_count"></property>
+    <property name="goodDate" column="good_date" type="date"></property>
+  </class>
+</hibernate-mapping>

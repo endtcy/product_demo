@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+	<bean id="goodDao" class="com.sinitek.demo.dao.hibernate.GoodDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+	<bean id="goodService" class="com.sinitek.demo.service.GoodService">
+		<property name="goodDao" ref="goodDao"/>
+	</bean>
+</beans>
